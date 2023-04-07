@@ -8,27 +8,31 @@
 
     <!-- Шапка сайта -->
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <span class="visually-hidden">Ссылка на главную страницу.</span>
-        <img class="main-header__logo-image" src="#" width="5" height="5" alt="Город Седона.">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <!-- кнопка для бургера -->
+      <button class="toggle" type="button">
+        <span class="visually-hidden">Переключить состояние меню.</span>
+      </button>
 
+      <!-- логотип сайта - ссылка на главную страницу -->
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
+          <img class="navigation__logo-image" src="#" width="5" height="5" alt="Город Седона.">
+        </a>
+
+      <!-- список навигации -->
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">HTML academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener nofollow">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,16 +40,18 @@
 
     <!-- Основное содержание главной страницы -->
     <main class="main-container">
-      <h1 class="visually-hidden">SEDONA 2</h1>
 
       <section class="welcome">
-        <h2 class="visually-hidden">welcome</h2>
-        <img src="#" alt="welcome to the gorgeous.">
+        <h2 class="visually-hidden">welcome.</h2>
+        <img class="welcome__img" src="#" alt="welcome to the gorgeous.">
       </section>
 
+      <!-- причины крутости Седоны -->
       <section class="advantages">
-        <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="advantages__introduction introduction">
+          <h1 class="introduction__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="introduction__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -89,48 +95,52 @@
         </ul>
       </section>
 
+      <!-- "заинтересовались?" -->
       <section class="interesting">
-        <h2 class="interesting__title">Заинтересовались?</h2>
-        <p class="interesting__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="interesting__button" type="submit">Найти гостиницу</button>
+        <div class="interesting__introduction introduction">
+          <h1 class="introduction__title">Заинтересовались?</h1>
+          <p class="introduction__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <a class="interesting__button" href="#">Найти гостиницу</a>
       </section>
 
+      <!-- карта расположения Седоны -->
       <section class="map">
-        <h2 class="visually-hidden">map</h2>
+        <h3 class="visually-hidden">Седона на карте.</h3>
+        <img class="map__img" src="#" alt="Карта расположения Седоны.">
+        <iframe class="map__iframe" src="#"></iframe>
       </section>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <section class="information">
-        <h2 class="visually-hidden">footer SEDONA 2</h2>
-        <a class="information__visit-sedona" href="#">#visitSEDONA</a>
+      <!-- visitSEDONA -->
+      <span class="visit-sedona">#visitSEDONA</span>
 
-        <ul class="information__contacts contacts">
+      <!-- социальные сети -->
+      <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--vk" href="#">
-              <span class="visually-hidden">Ссылка на страницу VK.</span>
+            <a class="contacts__link contacts__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+              <span class="visually-hidden">Наша страница в VK.</span>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--tg" href="#">
-              <span class="visually-hidden">Ссылка на Telegram канал.</span>
+            <a class="contacts__link contacts__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Телеграмм">
+              <span class="visually-hidden">Наш канал в Telegram.</span>
             </a>
           </li>
           <li class="contacts-list">
-            <a class="contacts__link contacts__link--yt" href="#">
-              <span class="visually-hidden">Ссылка на видеохостинг Youtube.</span>
+            <a class="contacts__link contacts__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow" title="Наш канал на YouTube">
+              <span class="visually-hidden">Наш канал на YouTube.</span>
             </a>
           </li>
-        </ul>
+      </ul>
 
-        <div class="information__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
-            <span class="visually-hidden">Ссылка на htmlacademy.</span>
-        </a>
-        </div>
-      </section>
+      <!-- копирайт -->
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow">
+        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+        <p class="copyright__text">Разработано</p>
+      </a>
     </footer>
 
   </body>
