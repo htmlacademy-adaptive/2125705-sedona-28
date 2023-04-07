@@ -9,27 +9,31 @@
 
     <!-- Шапка сайта -->
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <span class="visually-hidden">Ссылка на главную страницу.</span>
-        <img class="main-header__logo-image" src="#" width="5" height="5" alt="Город Седона.">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <!-- кнопка для бургера -->
+      <button class="toggle" type="button">
+        <span class="visually-hidden">Переключить состояние меню.</span>
+      </button>
 
+      <!-- логотип сайта - ссылка на главную страницу -->
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
+          <img class="navigation__logo-image" src="#" width="5" height="5" alt="Город Седона.">
+        </a>
+
+      <!-- список навигации -->
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item navigation__item--active">
-            <a class="navigation__link " href="#">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">HTML academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener nofollow">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -37,83 +41,109 @@
 
     <!-- Основное содержание второй страницы -->
     <main class="main-container">
-      <section class="welcome">
-        <h1 class="welcome__title">Sedona</h1>
+
+      <section class="welcome-second">
+        <h2 class="visually-hidden">Sedona.</h2>
+        <img class="welcome-second__img" src="#" alt="">
       </section>
 
+      <!-- фото -->
       <section class="multimedia">
-        <h2 class="multimedia__title">Фото и видео</h2>
-        <p class="multimedia__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-        <ul class="multimedia__photo photo">
-          <li class="photo__card">
-            <img class="photo__img" src="#" width="5" height="5" alt="Закат, двухполосная дорога, вокруг зелень, на заднем фоне горы">
-            <h3 class="photo__title">Неродные просторы</h3>
-            <span class="photo__author">Автор фото: Борис</span>
-            <span class="photo__icon-likes"></span>
-            <span class="photo__likes">1350</span>
-          </li>
-          <li class="photo__card">
-            <img class="photo__img" src="#" width="5" height="5" alt="Цветущий кактус, на заднем фоне красные скалы.">
-            <h3 class="photo__title">Местная растительность</h3>
-            <span class="photo__author">Автор фото: Сергей</span>
-            <span class="photo__icon-likes"></span>
-            <span class="photo__likes">143</span>
-          </li>
-          <li class="photo__card">
-            <img class="photo__img" src="#" width="5" height="5" alt="Между хвойных лесов дорога, серпантином спускается вниз.">
-            <h3 class="photo__title">Дорога на север</h3>
-            <span class="photo__author">Автор фото: Петр</span>
-            <span class="photo__icon-likes"></span>
-            <span class="photo__likes">96</span>
-          </li>
-          <li class="photo__card">
-            <img class="photo__img" src="#" width="5" height="5" alt="Красные скалы, с крутыми отвесными склонами.">
-            <h3 class="photo__title">Мост дьявола</h3>
-            <span class="photo__author">Автор фото: Антон</span>
-            <span class="photo__icon-likes"></span>
-            <span class="photo__likes">254</span>
-          </li>
-        </ul>
+        <div class="multimedia__introduction introduction">
+          <h1 class="introduction__title">Фото и видео</h1>
+          <p class="introduction__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+        </div>
+
+        <div class="multimedia__photo photo">
+          <figure class="photo__card">
+            <a class="photo__link" href="#">
+              <img class="photo__img" src="#" width="5" height="5" alt="Закат, двухполосная дорога, вокруг зелень, на заднем фоне горы">
+            </a>
+            <figcaption class="photo__figcaption">
+              <h3 class="photo__title">Неродные просторы</h3>
+              <span class="photo__author">Автор фото: Борис</span>
+              <span class="photo__icon-likes"></span>
+              <span class="photo__likes">1350</span>
+            </figcaption>
+          </figure>
+          <figure class="photo__card">
+            <a class="photo__link" href="#">
+              <img class="photo__img" src="#" width="5" height="5" alt="Цветущий кактус, на заднем фоне красные скалы.">
+            </a>
+            <figcaption class="photo__figcaption">
+              <h3 class="photo__title">Местная растительность</h3>
+              <span class="photo__author">Автор фото: Сергей</span>
+              <span class="photo__icon-likes"></span>
+              <span class="photo__likes">143</span>
+            </figcaption>
+          </figure>
+          <figure class="photo__card">
+            <a class="photo__link" href="#">
+              <img class="photo__img" src="#" width="5" height="5" alt="Между хвойных лесов дорога, серпантином спускается вниз.">
+            </a>
+            <figcaption class="photo__figcaption">
+              <h3 class="photo__title">Дорога на север</h3>
+              <span class="photo__author">Автор фото: Петр</span>
+              <span class="photo__icon-likes"></span>
+              <span class="photo__likes">96</span>
+            </figcaption>
+          </figure>
+          <figure class="photo__card">
+            <a class="photo__link" href="">
+              <img class="photo__img" src="#" width="5" height="5" alt="Красные скалы, с крутыми отвесными склонами.">
+            </a>
+            <figcaption class="photo__figcaption">
+              <h3 class="photo__title">Мост дьявола</h3>
+              <span class="photo__author">Автор фото: Антон</span>
+              <span class="photo__icon-likes"></span>
+              <span class="photo__likes">254</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
+      <!-- "все еще сомневаетесь?" и видео -->
       <section class="distrust">
-        <h2 class="distrust__title">Все еще сомневаетесь?</h2>
-        <p class="distrust__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="distrust__video" src="#" width="5" height="5" poster="#"></video>
+        <div class="distrust__introduction introduction">
+          <h1 class="introduction__title">Все еще сомневаетесь?</h1>
+          <p class="introduction__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <a class="distrust__link" href="#">
+          <img class="distrust__img" src="#" alt="Видеопрезентация о городке Седона.">
+          <span class="distrust__play"></span>
+        </a>
       </section>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <section class="information">
-        <h2 class="visually-hidden">footer SEDONA 2</h2>
-        <a class="information__visit-sedona"  href="#">#visitSEDONA</a>
+      <!-- visitSEDONA -->
+      <span class="visit-sedona">#visitSEDONA</span>
 
-        <ul class="information__contacts contacts">
+      <!-- социальные сети -->
+      <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--vk" href="#">
-              <span class="visually-hidden">Ссылка на страницу VK.</span>
+            <a class="contacts__link contacts__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+              <span class="visually-hidden">Наша страница в VK.</span>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--tg" href="#">
-              <span class="visually-hidden">Ссылка на Telegram канал.</span>
+            <a class="contacts__link contacts__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Телеграмм">
+              <span class="visually-hidden">Наш канал в Telegram.</span>
             </a>
           </li>
           <li class="contacts-list">
-            <a class="contacts__link contacts__link--yt" href="#">
-              <span class="visually-hidden">Ссылка на видеохостинг Youtube.</span>
+            <a class="contacts__link contacts__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow" title="Наш канал на YouTube">
+              <span class="visually-hidden">Наш канал на YouTube.</span>
             </a>
           </li>
-        </ul>
+      </ul>
 
-        <div class="information__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
-            <span class="visually-hidden">Ссылка на htmlacademy.</span>
-        </a>
-        </div>
-      </section>
+      <!-- копирайт -->
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow">
+        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+        <p class="copyright__text">Разработано</p>
+      </a>
     </footer>
 
   </body>

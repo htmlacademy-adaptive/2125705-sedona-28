@@ -9,27 +9,31 @@
 
     <!-- Шапка сайта -->
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <span class="visually-hidden">Ссылка на главную страницу.</span>
-        <img class="main-header__logo-image" src="#" width="5" height="5" alt="Город Седона.">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <!-- кнопка для бургера -->
+      <button class="toggle" type="button">
+        <span class="visually-hidden">Переключить состояние меню.</span>
+      </button>
 
+      <!-- логотип сайта - ссылка на главную страницу -->
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
+          <img class="navigation__logo-image" src="#" width="5" height="5" alt="Город Седона.">
+        </a>
+
+      <!-- список навигации -->
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="#">Форма отзыва</a>
+          <li class="navigation__item  navigation__item--active">
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">HTML academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener nofollow">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -37,126 +41,126 @@
 
     <!-- Основное содержание Формы -->
     <main class="main-container">
-      <section class="welcome">
-        <h1 class="welcome__title">Sedona</h1>
+
+      <section class="welcome-second">
+        <h2 class="visually-hidden">Sedona.</h2>
+        <img class="welcome-second__img" src="#" alt="">
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__title">Оставьте свой отзыв</h2>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="feedback__introduction introduction">
+          <h1 class="introduction__title">Оставьте свой отзыв</h1>
+          <p class="introduction__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+
         <form class="feedback__form form" action="#" method="post">
-          <fieldset class="form-present">
-            <legend class="form-present__legend">Представьтесь:</legend>
-            <label class="form-present__label" for="name">
-              <span class="form-present__name">Имя*:</span>
-              <input class="form-present__input-name" type="text" id="name" placeholder="Введите имя" value="Петр">
+          <fieldset class="form__present present">
+            <legend class="present__legend legend">Представьтесь:</legend>
+            <label class="present__label">
+              <span class="present__name">Имя*:</span>
+              <input class="present__input-name" type="text" placeholder="Введите имя" value="Петр">
             </label>
-            <label class="form-present__label" for="surname">
-              <span class="form-present__surname">Фамилия*:</span>
-              <input class="form-present__input-surname" type="text" id="surname" placeholder="Введите фамилию" value="Пустота">
+            <label class="present__label">
+              <span class="present__surname">Фамилия*:</span>
+              <input class="present__input-surname" type="text" placeholder="Введите фамилию" value="Пустота">
             </label>
-            <label class="form-present__label" for="patronymic">
-              <span class="form-present__patronymic">Отчество:</span>
-              <input class="form-present__input-patronymic" type="text" id="patronymic" placeholder="Введите отчетство" value="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form-contacts">
-            <legend class="form-contacts__legend">Контактная информация:</legend>
-            <label class="form-contacts__label" for="tel">
-              <span class="form-contacts__telephone">Контактный телефон*:</span>
-              <input class="form-contacts__input-telephone" type="tel" id="tel" placeholder="Введите телефон">
-            </label>
-            <label class="form-contacts__label" for="email">
-              <span class="form-contacts__email">Электронная почта*:</span>
-              <input class="form-contacts__input-email" type="email" id="email" placeholder="Введите e-mail">
+            <label class="present__label">
+              <span class="present__patronymic">Отчество:</span>
+              <input class="present__input-patronymic" type="text" placeholder="Введите отчетство" value="Викторович">
             </label>
           </fieldset>
-          <fieldset class="form-experience">
-            <legend class="form-experience__legend">Ваше общее впечатление:</legend>
-            <label class="form-experience__label" for="positive">
-              <input class="form-experience__input-positive" type="radio" id="positive" value="positive" checked>
-              <span class="form-experience__radio"></span>
-              <span class="form-experience__positive">Скорее положительное</span>
+          <fieldset class="form__contacts contacts">
+            <legend class="contacts__legend legend">Контактная информация:</legend>
+            <label class="contacts__label">
+              <span class="contacts__telephone">Контактный телефон*:</span>
+              <input class="contacts__input-telephone" type="tel" placeholder="Введите телефон">
             </label>
-            <label class="form-experience__label" for="negative">
-              <input class="form-experience__input-negative" type="radio" id="negative" value="negative">
-              <span class="form-experience__radio"></span>
-              <span class="form-experience__negative">Скорее отрицательное</span>
-            </label>
-            <label class="form-experience__label" for="no-answer">
-              <input class="form-experience__input-no-answer" type="radio" id="no-answer" value="no-answer">
-              <span class="form-experience__radio"></span>
-              <span class="form-experience__no-answer">Затрудняюсь ответить</span>
+            <label class="contacts__label">
+              <span class="contacts__email">Электронная почта*:</span>
+              <input class="contacts__input-email" type="email" placeholder="Введите e-mail">
             </label>
           </fieldset>
-          <fieldset class="form-visited">
-            <legend class="form-visited__legend">Посещенные достопримечательности:</legend>
-            <label class="form-visited__label" for="bridge">
-              <input class="form-visited__input-bridge" type="checkbox" id="bridge" checked>
-              <span class="form-visited__checkbox"></span>
-              <span class="form-visited__bridge">Мост дьявола</span>
+          <fieldset class="form__experience experience">
+            <legend class="experience__legend legend">Ваше общее впечатление:</legend>
+            <label class="experience__label">
+              <input class="experience__input-positive" type="radio" value="positive" checked>
+              <span class="experience__radio"></span>
+              <span class="experience__positive">Скорее положительное</span>
             </label>
-            <label class="form-visited__label" for="mount">
-              <input class="form-visited__input-mount" type="checkbox" id="mount" checked>
-              <span class="form-visited__checkbox"></span>
-              <span class="form-visited__mount">Гора-колокол</span>
+            <label class="experience__label">
+              <input class="experience__input-negative" type="radio" value="negative">
+              <span class="experience__radio"></span>
+              <span class="experience__negative">Скорее отрицательное</span>
             </label>
-            <label class="form-visited__label" for="park">
-              <input class="form-visited__input-park" type="checkbox" id="park" checked>
-              <span class="form-visited__checkbox"></span>
-              <span class="form-visited__park">Слайд-парк</span>
-            </label>
-            <label class="form-visited__label" for="rock">
-              <input class="form-visited__input-rock" type="checkbox" id="rock">
-              <span class="form-visited__checkbox"></span>
-              <span class="form-visited__rock">Красные скалы</span>
+            <label class="experience__label">
+              <input class="experience__input-no-answer" type="radio" value="no-answer">
+              <span class="experience__radio"></span>
+              <span class="experience__no-answer">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="form-feeling">
-            <legend class="form-feeling__legent">Опишите свои эмоции:</legend>
-            <label class="form-feeling__label" for="feedback">
-              <textarea class="form-feeling__textarea" name="feedback" id="feedback" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__visited visited">
+            <legend class="visited__legend legend">Посещенные достопримечательности:</legend>
+            <label class="visited__label">
+              <input class="visited__input-bridge" type="checkbox" checked>
+              <span class="visited__checkbox"></span>
+              <span class="visited__bridge">Мост дьявола</span>
             </label>
-            <button class="form-feeling__button" type="submit">Отправить отзыв
-              <span class="visually-hidden">Отправить отзыв</span>
-            </button>
-            <span class="form-feeling__hint">*-Обязательные поля</span>
+            <label class="visited__label">
+              <input class="visited__input-mount" type="checkbox" checked>
+              <span class="visited__checkbox"></span>
+              <span class="visited__mount">Гора-колокол</span>
+            </label>
+            <label class="visited__label">
+              <input class="visited__input-park" type="checkbox" checked>
+              <span class="visited__checkbox"></span>
+              <span class="visited__park">Слайд-парк</span>
+            </label>
+            <label class="visited__label">
+              <input class="visited__input-rock" type="checkbox">
+              <span class="visited__checkbox"></span>
+              <span class="visited__rock">Красные скалы</span>
+            </label>
+          </fieldset>
+          <fieldset class="form__feeling feeling">
+            <legend class="feeling__legent legend">Опишите свои эмоции:</legend>
+            <textarea class="feeling__textarea" name="feedback" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </form>
+
+        <button class="feedback__button" type="submit">Отправить отзыв</button>
+        <span class="feedback__hint">*-Обязательные поля</span>
       </section>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <section class="information">
-        <h2 class="visually-hidden">footer SEDONA 2</h2>
-        <a class="information__visit-sedona"  href="#">#visitSEDONA</a>
+      <!-- visitSEDONA -->
+      <span class="visit-sedona">#visitSEDONA</span>
 
-        <ul class="information__contacts contacts">
+      <!-- социальные сети -->
+      <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--vk" href="#">
-              <span class="visually-hidden">Ссылка на страницу VK.</span>
+            <a class="contacts__link contacts__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+              <span class="visually-hidden">Наша страница в VK.</span>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--tg" href="#">
-              <span class="visually-hidden">Ссылка на Telegram канал.</span>
+            <a class="contacts__link contacts__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Телеграмм">
+              <span class="visually-hidden">Наш канал в Telegram.</span>
             </a>
           </li>
           <li class="contacts-list">
-            <a class="contacts__link contacts__link--yt" href="#">
-              <span class="visually-hidden">Ссылка на видеохостинг Youtube.</span>
+            <a class="contacts__link contacts__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow" title="Наш канал на YouTube">
+              <span class="visually-hidden">Наш канал на YouTube.</span>
             </a>
           </li>
-        </ul>
+      </ul>
 
-        <div class="information__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">
-            <span class="visually-hidden">Ссылка на htmlacademy.</span>
-        </a>
-        </div>
-      </section>
+      <!-- копирайт -->
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow">
+        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+        <p class="copyright__text">Разработано</p>
+      </a>
     </footer>
 
     <!-- Модальные окна -->
@@ -164,9 +168,7 @@
       <div class="error">
         <h3 class="error__title">Что-то пошло не так!</h3>
         <p class="error__text">Проверьте, поля выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="error__button" type="submit">ok
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
+        <button class="error__button" type="submit">ok</button>
       </div>
     </div>
 
@@ -174,9 +176,7 @@
       <div class="notice">
         <h3 class="notice__title">Ваш отзыв отправлен!</h3>
         <p class="notice__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
-        <button class="notice__button" type="submit">Закрыть окно
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
+        <button class="notice__button" type="submit">Закрыть окно</button>
       </div>
     </div>
 
