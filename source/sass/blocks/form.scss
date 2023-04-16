@@ -1,0 +1,151 @@
+.form__fieldset {
+  display: block;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  padding-bottom: 24px;
+
+  border: none;
+}
+
+.form__legend {
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__label:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.user__element {
+  display: block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.user__input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 58px;
+  padding: 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Areal", sans-serif;
+  color: $black;
+
+  background-color: $peace-grey;
+  border: none;
+
+  &::placeholder {
+    color: $placeholder-grey;
+  }
+}
+
+.element {
+  position: relative;
+
+  display: block;
+
+  text-align: left;
+}
+
+.element__text {
+  display: block;
+  margin-left: 62px;
+  padding: 10px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.element__icon {
+  position: absolute;
+
+  display: block;
+  width: 46px;
+  height: 46px;
+
+  background-color: $peace-grey;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.element__textarea {
+  box-sizing: border-box;
+  width: 279px;
+  height: 150px;
+  margin-bottom: 56px;
+  padding: 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Areal", sans-serif;
+  color: $placeholder-grey;
+
+  background-color: $peace-grey;
+  border: none;
+
+  resize: none;
+
+  &::placeholder {
+    color: $placeholder-grey;
+  }
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Areal", sans-serif;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+}
+
+.form__hint {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-right: auto;
+  margin-bottom: 22px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: $require-grey;
+  text-transform: uppercase;
+}

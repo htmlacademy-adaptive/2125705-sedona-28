@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+
+@import "./blocks/global/fonts.scss";
+@import "./blocks/global/variables.scss";
+@import "./blocks/global/global.scss";
+@import "./blocks/global/logo.scss";
+@import "./blocks/global/welcome.scss";
+@import "./blocks/global/introduction.scss";
+
+// header
+@import "./blocks/header.scss";
+@import "./blocks/toggle.scss";
+@import "./blocks/navigation.scss";
+
+// main-index
+@import "./blocks/advantages.scss";
+@import "./blocks/interesting.scss";
+@import "./blocks/map.scss";
+
+// main-catalog
+@import "./blocks/multimedia.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/distrust.scss";
+
+// main-form
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/element.scss";
+
+// footer
+@import "./blocks/footer.scss";
+@import "./blocks/visit-sedona.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+
+// modal
+@import "./blocks/modal-error.scss";
+@import "./blocks/modal-notice.scss";
