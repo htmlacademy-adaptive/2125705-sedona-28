@@ -1,0 +1,31 @@
+.navigation__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.navigation__list:last-child {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.navigation__item {
+  padding: 17px 0 12px;
+
+  background-color: $blue;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.navigation__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  color: $white;
+  text-decoration: none;
+
+  cursor: pointer;
+}

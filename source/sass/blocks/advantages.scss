@@ -1,0 +1,86 @@
+.advantages__introduction {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.advantages__item {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+
+  &--contrast {
+    color: $white;
+
+    background-color: $blue;
+  }
+
+  &--grey {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    background-color: $grey;
+  }
+}
+
+.advantages__item-features {
+  padding-right: 18px;
+  padding-left: 65px;
+
+  text-align: left;
+
+  &--home {
+    padding-top: 23px;
+  }
+
+  &--food {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  &--souvenir {
+    margin-bottom: 46px;
+  }
+}
+
+.advantages__item-features h3 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.advantages__subtitle {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantages__number {
+  display: block;
+  margin: 11px 0 17px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

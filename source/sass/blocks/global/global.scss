@@ -1,0 +1,43 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+html {
+  height: 100%;
+  // временно:
+
+  background-color: azure;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-family: "PT Sans", "Areal", sans-serif;
+  text-align: center;
+  color: $black;
+
+  background-color: $white;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 0 20px;
+  &--index {
+    padding: 0;
+  }
+}

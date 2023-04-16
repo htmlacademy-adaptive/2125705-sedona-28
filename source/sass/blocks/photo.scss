@@ -1,0 +1,61 @@
+.photo {
+  display: grid;
+
+  grid-template-columns: 1fr;
+}
+
+.photo__card {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.photo__link {
+  margin: 0;
+  padding: 0;
+
+  color: $black;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.photo__figcaption {
+  text-align: left;
+}
+
+.photo__title {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  display: block;
+  margin-bottom: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.photo__icon-likes {
+  display: block;
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+
+  background-image: url("../img/svg/like-icon.svg");
+}
+
+.photo__likes {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
