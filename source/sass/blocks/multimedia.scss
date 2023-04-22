@@ -1,3 +1,26 @@
+.multimedia {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .multimedia__introduction {
   padding: 37px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 0 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 104px;
+  }
 }

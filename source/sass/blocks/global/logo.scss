@@ -1,9 +1,14 @@
 .logo {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
 
-  color: $black;
-  text-decoration: none;
 
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
   cursor: pointer;
+  display: none;
 }
+

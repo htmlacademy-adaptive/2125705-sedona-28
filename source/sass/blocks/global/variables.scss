@@ -1,12 +1,20 @@
-// цвета фона и шрифта
+// Цвета фона и шрифта
 $blue: #81b3d2;
 $white: #ffffff;
 $grey: #eeeeee;
 $black: #000000;
 $placeholder-grey: rgba(0, 0, 0, 0.3);
 $require-grey: rgba(51, 51, 51, 0.6);
+$html-grey: #e7e5e5;
+$figcaption-grey-active: #eaeaea;
+$line-grey: #dbdbdb;
+$modal-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-// цвета состояний
+// Цвета состояний
 $peace-grey: #f2f2f2;
 $hover-grey: #e5e5e5;
 $down-grey: #d5d5d5;
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;

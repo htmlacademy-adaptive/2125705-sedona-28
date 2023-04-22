@@ -1,13 +1,25 @@
 .toggle {
+  position: absolute;
+  right: 20px;
+
+  display: none;
+  width: 23px;
+  height: 22px;
   margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  background-color: transparent;
 
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  color: $white;
-  text-transform: uppercase;
-
-  background-color: $blue;
+  background-image: url("../img/svg/icon-menu-close.svg");
   border: none;
   cursor: pointer;
+
+  &--close {
+    background-image: url("../img/svg/icon-menu-open.svg");
+    z-index: 6;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -2,15 +2,20 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item {
   width: 48px;
   height: 48px;
+
   background-color: $blue;
 }
 

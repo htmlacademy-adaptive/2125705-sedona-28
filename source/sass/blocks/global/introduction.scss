@@ -1,17 +1,40 @@
 .introduction__title {
-  margin: 0;
+  max-width: 440px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+
+    &--big-title {
+      font-size: 30px;
+    }
+  }
 }
 
 .introduction__text {
-  margin: 0;
+  max-width: 446px;
+  margin: 0 auto;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  &--long {
+    @media (min-width: $tablet-width) {
+      max-width: 485px;
+    }
+  }
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      max-width: 435px;
+    }
+  }
 }

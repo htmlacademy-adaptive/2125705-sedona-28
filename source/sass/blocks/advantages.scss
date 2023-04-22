@@ -1,6 +1,30 @@
-.advantages__introduction {
+.advantages {
   padding-top: 32px;
-  padding-bottom: 32px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
+}
+
+.advantages__introduction {
+  padding-bottom: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 124px;
+    padding-bottom: 55px;
+    padding-left: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 44px;
+  }
 }
 
 .advantages__list {
@@ -10,18 +34,42 @@
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
+  box-sizing: border-box;
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 40px;
   padding-left: 20px;
 
+  border: none;
+
   &--contrast {
     color: $white;
 
     background-color: $blue;
+
+    @media (min-width: $tablet-width) {
+      box-sizing: border-box;
+      max-width: 256px;
+      padding-top: 52px;
+      padding-right: 26px;
+      padding-bottom: 31px;
+      padding-left: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 400px;
+      padding-right: 50px;
+      padding-bottom: 51px;
+      padding-left: 50px;
+    }
   }
 
   &--grey {
@@ -29,6 +77,36 @@
     padding-bottom: 24px;
 
     background-color: $grey;
+
+    @media (min-width: $tablet-width) {
+      box-sizing: border-box;
+      max-width: 256px;
+      padding-top: 41px;
+      padding-right: 33px;
+      padding-bottom: 41px;
+      padding-left: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 400px;
+      padding-top: 52px;
+      padding-right: 50px;
+      padding-bottom: 52px;
+      padding-left: 50px;
+    }
+  }
+}
+
+.advantages__figure {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &--opposite {
+      flex-direction: row-reverse;
+    }
   }
 }
 
@@ -50,7 +128,24 @@
   &--souvenir {
     margin-bottom: 46px;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    max-width: 256px;
+    margin: 0;
+    padding: 158px 33px 60px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    padding: 169px 50px 69px;
+
+    text-align: center;
+  }
 }
+
 
 .advantages__item-features h3 {
   margin-top: 8px;
@@ -64,6 +159,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__number {
