@@ -2,12 +2,37 @@
   display: grid;
 
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photo__card {
   margin: 0;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--first {
+      grid-column: span 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &--first {
+      grid-column: span 3;
+    }
+  }
 }
 
 .photo__link {
@@ -22,17 +47,40 @@
 
 .photo__figcaption {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+    background-color: $peace-grey;
+
+    &--active {
+      background-color: $figcaption-grey-active;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $black;
+    opacity: 0.3;
+  }
 }
 
 .photo__title {
   margin: 0;
   margin-top: 15px;
-  margin-bottom: 11px;
 
   font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .photo__author {
@@ -42,6 +90,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photo__grade {
+  display: flex;
+  align-items: center;
 }
 
 .photo__icon-likes {
@@ -55,6 +112,7 @@
 
 .photo__likes {
   display: block;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;

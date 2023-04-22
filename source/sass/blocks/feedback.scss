@@ -1,4 +1,29 @@
+.feedback {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
 .feedback__introduction {
   padding-top: 36px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 68px;
+  }
 }

@@ -1,4 +1,11 @@
+.navigation {
+  position: relative;
+}
+
 .navigation__list {
+  position: relative;
+
+  display: block;
   margin: 0;
   padding: 0;
 
@@ -6,10 +13,39 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
+
+  &--open {
+    position: absolute;
+
+    display: block;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &--close {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    box-shadow: none;
+
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
-.navigation__list:last-child {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
+.navigation__item:last-child {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 87%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+    background: $white;
+  }
 }
 
 .navigation__item {
@@ -17,15 +53,36 @@
 
   background-color: $blue;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 5px;
+
+    background-color: $white;
+    box-shadow: none;
+
+    &:nth-child(3) {
+      grid-column-start: 4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 240px;
+    padding: 10px 25px;
+  }
 }
 
 .navigation__link {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 
   color: $white;
   text-decoration: none;
 
   cursor: pointer;
+
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
