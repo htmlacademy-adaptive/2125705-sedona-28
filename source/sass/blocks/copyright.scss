@@ -1,5 +1,6 @@
 .copyright {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 129px;
   height: 35px;
 
@@ -9,10 +10,22 @@
 }
 
 .copyright__text {
+  align-self: center;
   margin: 0;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.copyright__link {
+  width: 28px;
+  height: 35px;
+
+  background-image: url("../img/svg/html.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }

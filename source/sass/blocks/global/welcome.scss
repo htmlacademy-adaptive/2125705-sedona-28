@@ -1,5 +1,30 @@
 .welcome {
-  background-color: $blue;
-  // background-image: url("../img/jpg/background.jpg");
+  position: relative;
+
+  background-color: $white;
+  padding-top: 90px;
+  // padding-bottom: 85px;
+  background-image: url("../img/jpg/background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: " ";
+    width: 100%;
+    background-image: url("../img/svg/decor_element.svg");
+    background-color: transparent;
+    height: 57px;
+    background-repeat: no-repeat;
+    display: block;
+    position: initial;
+    // background-size: 100%;
+    background-position: center;
+  }
+}
+
+.welcome__img {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 85px;
 }

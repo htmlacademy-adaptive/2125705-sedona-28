@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 32px;
+  padding-top: 34px;
 
 
   @media (min-width: $tablet-width) {
@@ -12,9 +12,25 @@
 }
 
 .advantages__introduction {
+  padding-right: 25px;
   padding-bottom: 16px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 25px;
+
+  background-color: $white;
+  position: relative;
+
+  &::after {
+    content: url("../img/svg/decor.svg");
+    width: 100%;
+    height: 37px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-right: 124px;
@@ -35,6 +51,22 @@
 
   list-style-type: none;
 
+  background-color: #eeeeee;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__list-features {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,17 +75,15 @@
 
 .advantages__item {
   box-sizing: border-box;
-  padding-top: 40px;
   padding-right: 20px;
-  padding-bottom: 40px;
   padding-left: 20px;
-
-  border: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   &--contrast {
     color: $white;
 
-    background-color: $blue;
+    border: none;
 
     @media (min-width: $tablet-width) {
       box-sizing: border-box;
@@ -78,6 +108,14 @@
 
     background-color: $grey;
 
+    &:not(:last-child) {
+      border-bottom: 1px solid #d6d6d6;
+
+      @media (min-width: $tablet-width) {
+        border-bottom: none;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       box-sizing: border-box;
       max-width: 256px;
@@ -85,6 +123,7 @@
       padding-right: 33px;
       padding-bottom: 41px;
       padding-left: 33px;
+      flex-grow: 1;
     }
 
     @media (min-width: $desktop-width) {
@@ -101,13 +140,21 @@
   display: flex;
   flex-direction: column;
 
+  background-color: #81b3d2;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    max-height: 256px;
 
     &--opposite {
       flex-direction: row-reverse;
     }
   }
+}
+
+.advantages__img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .advantages__item-features {
@@ -116,17 +163,40 @@
 
   text-align: left;
 
+  background-repeat: no-repeat;
+
   &--home {
     padding-top: 23px;
+
+    background-image: url("../img/svg/home.svg");
+    background-position: 16px 20px;
+
+    @media (min-width: $tablet-width) {
+      background-position: center 80px;
+    }
   }
 
   &--food {
     margin-top: 25px;
     margin-bottom: 25px;
+
+    background-image: url("../img/svg/food.svg");
+    background-position: 16px -2px;
+
+    @media (min-width: $tablet-width) {
+      background-position: center 80px;
+    }
   }
 
   &--souvenir {
     margin-bottom: 46px;
+
+    background-image: url("../img/svg/souvenir.svg");
+    background-position: 16px 0;
+
+    @media (min-width: $tablet-width) {
+      background-position: center 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -146,7 +216,6 @@
   }
 }
 
-
 .advantages__item-features h3 {
   margin-top: 8px;
   margin-bottom: 16px;
@@ -162,6 +231,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
