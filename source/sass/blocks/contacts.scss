@@ -33,14 +33,18 @@
   text-decoration: none;
 
   cursor: pointer;
-}
+  background-repeat: no-repeat;
+  background-position: center;
 
-.copyright {
-  margin: 0;
-  padding: 0;
+  &--vk {
+    background-image: url("../img/svg/vk.svg");
+  }
 
-  color: $black;
-  text-decoration: none;
+  &--tg {
+    background-image: url("../img/svg/telegram.svg");
+  }
 
-  cursor: pointer;
+  &--yt {
+    background-image: url("../img/svg/youtube.svg");
+  }
 }

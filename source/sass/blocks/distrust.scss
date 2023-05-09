@@ -40,11 +40,28 @@
 }
 
 .distrust__link {
+  display: block;
+  width: 48px;
+  height: 54px;
   margin: 0;
   padding: 0;
 
   color: $black;
   text-decoration: none;
 
+  background: blue;
   cursor: pointer;
+}
+
+.distrust__play {
+  position: absolute;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border: 0 solid transparent;
+  border-top-width: 27px;
+  border-bottom-width: 27px;
+  border-left: 48px solid $button-play;
 }

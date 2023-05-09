@@ -61,17 +61,17 @@
           <fieldset class="form__fieldset form__fieldset--user">
             <legend class="form__legend form__legend--present">Представьтесь:</legend>
             <div class="form__inputs">
-              <label class="elements">
-                <span class="user__element">Имя*:</span>
-                <input class="user__input" type="text" name="name" placeholder="Имя" value="Петр">
+              <label class="element">
+                <span class="element__user">Имя*:</span>
+                <input class="element__user-input" type="text" name="name" placeholder="Имя" value="Петр">
               </label>
-              <label class="elements">
-                <span class="user__element">Фамилия*:</span>
-                <input class="user__input" type="text" name="surname" placeholder="Фамилия" value="Пустота">
+              <label class="element">
+                <span class="element__user">Фамилия*:</span>
+                <input class="element__user-input" type="text" name="surname" placeholder="Фамилия" value="Пустота">
               </label>
-              <label class="elements">
-                <span class="user__element">Отчество:</span>
-                <input class="user__input" type="text" name="patronymic" placeholder="Отчетство" value="Викторович">
+              <label class="element">
+                <span class="element__user">Отчество:</span>
+                <input class="element__user-input" type="text" name="patronymic" placeholder="Отчетство" value="Викторович">
               </label>
             </div>
           </fieldset>
@@ -79,32 +79,32 @@
           <fieldset class="form__fieldset form__fieldset--info">
             <legend class="form__legend form__legend--present">Контактная информация:</legend>
             <div class="form__contact">
-              <label class="elements">
-                <span class="user__element">Контактный телефон*:</span>
-                <input class="user__input" name="tel" type="tel" placeholder="Введите телефон">
+              <label class="element">
+                <span class="element__user">Контактный телефон*:</span>
+                <input class="element__user-input element__user-input--tel" name="tel" type="tel" placeholder="Введите телефон">
               </label>
-              <label class="elements">
-                <span class="user__element">Электронная почта*:</span>
-                <input class="user__input" name="email" type="email" placeholder="Введите e-mail">
+              <label class="element">
+                <span class="element__user">Электронная почта*:</span>
+                <input class="element__user-input element__user-input--e-mail" name="e-mail" type="e-mail" placeholder="Введите e-mail">
               </label>
             </div>
           </fieldset>
           <!-- Ваше общее впечатление -->
           <fieldset class="form__fieldset form__fieldset--impression">
-            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
             <div class="form__radio">
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="experience" type="radio" value="positive" checked>
                 <span class="element__icon element__icon--radio"></span>
                 <span class="element__text">Скорее положительное</span>
               </label>
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="experience" type="radio" value="negative">
                 <span class="element__icon element__icon--radio"></span>
                 <span class="element__text">Скорее отрицательное</span>
               </label>
-              <label class="elements">
-                <input class="element__input-no-answer visually-hidden" name="experience" type="radio" value="no-answer">
+              <label class="element">
+                <input class="element__input visually-hidden" name="experience" type="radio" value="no-answer">
                 <span class="element__icon element__icon--radio"></span>
                 <span class="element__text">Затрудняюсь ответить</span>
               </label>
@@ -112,24 +112,24 @@
           </fieldset>
           <!-- Посещенные достопримечательности -->
           <fieldset class="form__fieldset form__fieldset--attraction">
-            <legend class="form__legend">Посещенные достопримечательности:</legend>
+            <legend class="form__legend form__legend--attraction">Посещенные достопримечательности:</legend>
             <div class="form__checkbox">
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Мост дьявола" type="checkbox" checked>
                 <span class="element__icon element__icon--checkbox"></span>
                 <span class="element__text">Мост дьявола</span>
               </label>
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Гора-колокол" type="checkbox" checked>
                 <span class="element__icon element__icon--checkbox"></span>
                 <span class="element__text">Гора-колокол</span>
               </label>
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Слайд-парк" type="checkbox" checked>
                 <span class="element__icon element__icon--checkbox"></span>
                 <span class="element__text">Слайд-парк</span>
               </label>
-              <label class="elements">
+              <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Красные скалы" type="checkbox">
                 <span class="element__icon element__icon--checkbox"></span>
                 <span class="element__text">Красные скалы</span>
@@ -138,8 +138,8 @@
           </fieldset>
           <!-- Опишите свои эмоции -->
           <fieldset class="form__fieldset form__fieldset--emotion">
-            <legend class="form__legend">Опишите свои эмоции:</legend>
-            <label class="elements elements--label">
+            <legend class="form__legend form__legend--emotion">Опишите свои эмоции:</legend>
+            <label class="element element--label">
               <span class="visually-hidden">Опишите подробно все свои восторги</span>
               <textarea class="element__textarea" name="feedback" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
@@ -180,10 +180,13 @@
       </ul>
 
       <!-- Копирайт -->
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow">
-        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+      <div class="copyright">
         <p class="copyright__text">Разработано</p>
-      </a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow" title="HTMLAcademy">
+
+        </a>
+        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+      </div>
     </footer>
 
     <!-- Модальные окна -->
@@ -204,6 +207,6 @@
         </div>
       </div>
     </div>
-
+    <script src="./js/index.js"></script>
   </body>
 </html>
