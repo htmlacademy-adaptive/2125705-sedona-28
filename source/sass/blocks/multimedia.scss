@@ -1,6 +1,6 @@
 .multimedia {
-  padding-right: 20px;
-  padding-left: 20px;
+  // padding-right: 20px;
+  // padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-right: 60px;
@@ -16,8 +16,12 @@
 .multimedia__introduction {
   padding: 37px 0 25px;
 
+  border-bottom: 1px solid #e5e5e5;
+
   @media (min-width: $tablet-width) {
     padding: 61px 0 62px;
+
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

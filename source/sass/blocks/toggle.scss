@@ -8,15 +8,16 @@
   margin: 0 auto;
   margin-top: 17px;
   margin-bottom: 17px;
-  background-color: transparent;
 
+  background-color: transparent;
   background-image: url("../img/svg/icon-menu-close.svg");
   border: none;
   cursor: pointer;
 
   &--close {
-    background-image: url("../img/svg/icon-menu-open.svg");
     z-index: 6;
+
+    background-image: url("../img/svg/icon-menu-open.svg");
   }
 
   @media (min-width: $tablet-width) {

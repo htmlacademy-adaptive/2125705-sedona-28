@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -21,7 +25,7 @@
         <!-- Логотип -->
         <a class="logo" href="index.html">
           <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
-          <img class="logo__image" src="../img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="logo__image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
 
       <!-- Список навигации -->
@@ -45,27 +49,38 @@
     <!-- Основное содержание главной страницы -->
     <main class="main-content main-content--index">
 
+      <!-- Добро пожаловать (welcome) -->
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать на сайт городка Седона.</h1>
-        <img class="welcome__img" src="../img/svg/welcome.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону.">
-      </section>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/svg/welcome-tablet.svg">
+          <img class="welcome__img" src="img/svg/welcome-mobile.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону.">
+        </section>
 
       <!-- Причины крутости Седоны -->
       <section class="advantages">
+
+        <!-- Заглавный блок -->
         <div class="advantages__introduction introduction">
           <h2 class="introduction__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="introduction__text introduction__text--long">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
 
-        <div class="advantages__figure">
+        <!-- Настоящий городок -->
+        <div class="advantages__figure advantages__figure--decor">
           <div class="advantages__item advantages__item--contrast">
             <h3 class="advantages__subtitle">Настоящий городок</h3>
-            <span class="advantages__number"> - №1 -</span>
+            <span class="advantages__number">— №1 —</span>
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="advantages__img" src="../img/jpg/image1.jpg" width="512px" height="256px" alt="Улочка городка Седона, на заднем фоне горы.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/jpg/image1-desktop.jpg 1x, img/jpg/image1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/jpg/image1-tablet.jpg 1x, img/jpg/image1-tablet@2x.jpg 2x">
+            <img class="advantages__img" src="img/jpg/image1-mobile.jpg" srcset="img/jpg/image1-mobile@2x.jpg 2x" width="320px" height="260px" alt="Улочка городка Седона, на заднем фоне горы.">
+          </picture>
         </div>
 
+        <!-- Жилье, Еда, Сувениры -->
         <ul class="advantages__list-features">
           <li class="advantages__item-features advantages__item-features--home">
             <h3 class="advantages__subtitle">Жилье</h3>
@@ -81,29 +96,35 @@
           </li>
         </ul>
 
+        <!-- Мост дьявола -->
         <div class="advantages__figure advantages__figure--opposite">
           <div class="advantages__item advantages__item--contrast">
             <h3 class="advantages__subtitle">Там есть мост дьявола</h3>
-            <span class="advantages__number"> - №2 -</span>
+            <span class="advantages__number">— №2 —</span>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__img" src="../img/jpg/image2.jpg" width="512px" height="256px" alt="Глубокая речная долина с крутыми отвесными склонами и узким дном.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/jpg/image2-desktop.jpg 1x, img/jpg/image2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/jpg/image2-tablet.jpg 1x, img/jpg/image2-tablet@2x.jpg 2x">
+            <img class="advantages__img" src="img/jpg/image2-mobile.jpg" srcset="img/jpg/image2-mobile@2x.jpg 2x" width="320px" height="260px" alt="Глубокая речная долина с крутыми отвесными склонами и узким дном.">
+          </picture>
         </div>
 
+        <!-- Остальные причины -->
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__subtitle">Небольшая площадь</h3>
-            <span class="advantages__number"> - №3 -</span>
+            <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__subtitle">Красивая дорога</h3>
-            <span class="advantages__number"> - №4 -</span>
+            <span class="advantages__number">— №4 —</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__subtitle">Мало туристов</h3>
-            <span class="advantages__number"> - №5 -</span>
+            <span class="advantages__number">— №5 —</span>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
@@ -128,6 +149,7 @@
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
+
       <!-- VisitSedona -->
       <span class="visit-sedona">#visitSEDONA</span>
 
@@ -154,11 +176,10 @@
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow" title="HTMLAcademy">
-
         </a>
         <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
       </div>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

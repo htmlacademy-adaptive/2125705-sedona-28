@@ -1,26 +1,26 @@
 .main-footer {
-  padding: 33px 0 40px;
-
-  text-transform: uppercase;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: 235px;
+  margin: 0 auto;
+  padding: 33px 0 33px;
+
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    min-height: 120px;
     flex-direction: row;
-    padding: 0 60px;
     justify-content: space-between;
+    min-height: 120px;
     margin: 0;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 120px;
     flex-direction: row;
-    padding: 0 120px;
     justify-content: space-between;
+    min-height: 120px;
     margin: 0;
+    padding: 0 120px;
   }
 }

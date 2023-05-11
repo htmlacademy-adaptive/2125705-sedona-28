@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -17,10 +21,11 @@
       </button>
 
       <nav class="navigation">
+
         <!-- Логотип -->
         <a class="logo" href="index.html">
           <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
-          <img class="logo__image" src="../img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="logo__image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
 
         <!-- Список навигации -->
@@ -44,13 +49,19 @@
     <!-- Основное содержание Формы -->
     <main class="main-content">
 
+      <!-- Добро пожаловать (welcome) -->
       <section class="welcome welcome--inner">
         <h1 class="visually-hidden">Отзыв посетителей городка Седона.</h1>
-        <img class="welcome__img" src="#" alt="Городок Седона.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/svg/sedona-tablet.svg"  width="457" height="78">
+          <img class="welcome__img welcome__img--inner" src="img/svg/sedona-mobile.svg" width="229" height="39" alt="Городок Седона.">
+        </picture>
       </section>
 
       <!-- Форма отзыва -->
       <section class="feedback">
+
+        <!-- Заглавный блок -->
         <div class="feedback__introduction introduction">
           <h2 class="introduction__title">Оставьте свой отзыв</h2>
           <p class="introduction__text introduction__text--small">Помогите нашим отелям стать лучше! Оставьте отзыв о них,  а также о посещенных вами достопримечательностях</p>
@@ -183,13 +194,14 @@
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow" title="HTMLAcademy">
-
         </a>
         <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
       </div>
     </footer>
 
-    <!-- Модальные окна -->
+  <!-- Модальные окна -->
+
+    <!-- Что-то пошло не так -->
     <div class="modal-error">
       <div class="error">
         <h3 class="error__title">Что-то пошло не так!</h3>
@@ -198,6 +210,7 @@
       </div>
     </div>
 
+    <!-- Ваш отзыв отправлен -->
     <div class="modal-notice">
       <div class="notice">
         <h3 class="notice__title">Ваш отзыв отправлен!</h3>
@@ -207,6 +220,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
