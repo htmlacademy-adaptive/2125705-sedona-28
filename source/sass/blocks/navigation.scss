@@ -4,6 +4,7 @@
 
 .navigation__list {
   position: relative;
+  z-index: 5;
 
   display: block;
   margin: 0;
@@ -14,22 +15,12 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  z-index: 5;
-
-  &--open {
-    position: absolute;
-
-    display: block;
-    width: 100%;
-    z-index: 5;
-  }
-
-  &--close {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: grid;
+
+    font-size: 14px;
+    line-height: 21px;
 
     box-shadow: none;
 
@@ -38,6 +29,18 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  &--open {
+    position: absolute;
+    z-index: 5;
+
+    display: block;
+    width: 100%;
+  }
+
+  &--close {
+    display: none;
   }
 }
 
@@ -57,7 +60,7 @@
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    padding: 10px 5px;
+    padding: 12px 5px;
 
     background-color: $white;
     box-shadow: none;

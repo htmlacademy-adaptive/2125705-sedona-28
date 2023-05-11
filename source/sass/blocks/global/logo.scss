@@ -3,16 +3,14 @@
   left: 50%;
   z-index: 4;
 
-
+  display: block;
   width: 185px;
   height: 96px;
 
   transform: translateX(-50%);
   cursor: pointer;
-  display: block;
 
   @media (min-width: $tablet-width) {
     z-index: 7;
   }
 }
-

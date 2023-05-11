@@ -4,22 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
     <!-- Шапка сайта -->
     <header class="main-header">
+
       <!-- Кнопка для бургера -->
       <button class="toggle" type="button">
         <span class="visually-hidden">Переключить состояние меню.</span>
       </button>
 
       <nav class="navigation">
+
         <!-- Логотип -->
         <a class="logo" href="index.html">
           <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
-          <img class="logo__image" src="../img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="logo__image" src="img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
 
       <!-- Список навигации -->
@@ -43,11 +49,16 @@
     <!-- Основное содержание второй страницы -->
     <main class="main-content">
 
+      <!-- Добро пожаловать (welcome) -->
       <section class="welcome welcome--inner">
         <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
-        <img class="welcome__img" src="#" alt="Городок Седона.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/svg/sedona-tablet.svg">
+          <img class="welcome__img welcome__img--inner" src="img/svg/sedona-mobile.svg" width="229" height="39" alt="Городок Седона.">
+        </picture>
       </section>
 
+      <!-- Заглавный блок -->
       <section class="multimedia">
         <div class="multimedia__introduction introduction">
           <h2 class="introduction__title">Фото и видео</h2>
@@ -58,7 +69,11 @@
         <div class="multimedia__photo photo">
           <figure class="photo__card photo__card--first">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="#" width="5" height="5" alt="Закат, двухполосная дорога, вокруг зелень, на заднем фоне горы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpg/photo1-desktop.jpg 1x, img/jpg/photo1-desktop@2x.jpg 2x">
+                <source media="(min-width: 758px)" srcset="img/jpg/photo1-tablet.jpg 1x, img/jpg/photo1-tablet@2x.jpg 2x">
+                <img class="photo__img photo__img--first" src="img/jpg/photo1-mobile.jpg" srcset="img/jpg/photo1-mobile@2x.jpg 2x" width="280" height="280" alt="Закат, двухполосная дорога, вокруг зелень, на заднем фоне горы">
+              </picture>
             </a>
             <figcaption class="photo__figcaption">
               <div>
@@ -74,7 +89,11 @@
           </figure>
           <figure class="photo__card">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="#" width="5" height="5" alt="Цветущий кактус, на заднем фоне красные скалы.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpg/photo2-desktop.jpg 1x, img/jpg/photo2-desktop@2x.jpg 2x">
+                <source media="(min-width: 758px)" srcset="img/jpg/photo2-tablet.jpg 1x, img/jpg/photo2-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/jpg/photo2-mobile.jpg" srcset="img/jpg/photo2-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус, на заднем фоне красные скалы.">
+              </picture>
             </a>
             <figcaption class="photo__figcaption">
               <div>
@@ -89,7 +108,11 @@
           </figure>
           <figure class="photo__card">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="#" width="5" height="5" alt="Между хвойных лесов дорога, серпантином спускается вниз.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpg/photo3-desktop.jpg 1x, img/jpg/photo3-desktop@2x.jpg 2x">
+                <source media="(min-width: 758px)" srcset="img/jpg/photo3-tablet.jpg 1x, img/jpg/photo3-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/jpg/photo3-mobile.jpg" srcset="img/jpg/photo3-mobile@2x.jpg 2x" width="280" height="280" alt="Между хвойных лесов дорога, серпантином спускается вниз.">
+              </picture>
             </a>
             <figcaption class="photo__figcaption photo__figcaption--active">
               <div>
@@ -104,7 +127,11 @@
           </figure>
           <figure class="photo__card">
             <a class="photo__link" href="">
-              <img class="photo__img" src="#" width="5" height="5" alt="Красные скалы, с крутыми отвесными склонами.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/jpg/photo4-desktop.jpg 1x, img/jpg/photo4-desktop@2x.jpg 2x">
+                <source media="(min-width: 758px)" srcset="img/jpg/photo4-tablet.jpg 1x, img/jpg/photo4-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/jpg/photo4-mobile.jpg" srcset="img/jpg/photo4-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы, с крутыми отвесными склонами.">
+              </picture>
             </a>
             <figcaption class="photo__figcaption">
               <div>
@@ -126,7 +153,13 @@
           <h2 class="introduction__title">Все еще сомневаетесь?</h2>
           <p class="introduction__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <img class="distrust__img" src="#" alt="Видеопрезентация о городке Седона.">
+
+        <!-- Видео -->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/jpg/video-desktop.jpg 1x, img/jpg/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 758px)" srcset="img/jpg/video-tablet.jpg 1x, img/jpg/video-tablet@2x.jpg 2x">
+          <img class="distrust__img" src="img/jpg/video-mobile.jpg" srcset="img/jpg/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация о городке Седона.">
+        </picture>
         <a class="distrust__link" href="#">
           <span class="distrust__play"></span>
         </a>
@@ -135,6 +168,7 @@
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
+
       <!-- VisitSedona -->
       <span class="visit-sedona">#visitSEDONA</span>
 
@@ -161,11 +195,10 @@
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow" title="HTMLAcademy">
-
         </a>
         <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
       </div>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

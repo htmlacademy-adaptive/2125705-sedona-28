@@ -15,12 +15,20 @@
 }
 
 .photo__card {
+  position: relative;
+
   margin: 0;
   padding-top: 24px;
+  padding-right: 20px;
   padding-bottom: 24px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid #d6d6d6;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    border: none;
 
     &--first {
       grid-column: span 2;
@@ -28,7 +36,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--first {
       grid-column: span 3;
     }
@@ -50,6 +57,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 22px;
     padding-right: 20px;
@@ -64,8 +72,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $black;
-    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    background-color: rgb($black, 0.3);
   }
 }
 
@@ -107,13 +120,33 @@
   height: 21px;
   margin-right: 14px;
 
-  background-image: url("../img/svg/like-icon.svg");
+  background-image: url("../img/svg/like-icon-mobile.svg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/svg/like-icon-desktop.svg");
+  }
 }
 
 .photo__likes {
   display: block;
+  padding-top: 5px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+}
+
+.photo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 267px;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    &--first {
+      max-height: 400px;
+    }
+  }
 }
