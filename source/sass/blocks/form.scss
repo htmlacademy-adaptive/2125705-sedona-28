@@ -30,20 +30,21 @@
 
   &--user {
     padding-bottom: 39px;
+    margin-top: 23px;
 
     @media (min-width: $tablet-width) {
       align-self: flex-start;
       box-sizing: border-box;
       width: 50%;
       margin: 0;
-      margin-bottom: 63px;
+      margin-bottom: 55px;
       padding: 8px 28px 8px 0;
 
       border-right: 1px solid $line-grey;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 71px;
+      margin-bottom: 63px;
       padding-right: 49px;
     }
   }
@@ -80,7 +81,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 56px;
+      margin-bottom: 73px;
     }
   }
 
@@ -97,7 +98,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 56px;
+      margin-bottom: 87px;
     }
   }
 
@@ -132,6 +133,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     margin-bottom: 28px;
   }
 
@@ -151,6 +153,10 @@
       padding-right: 50px;
       padding-left: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
+    }
   }
 
   &--attraction {
@@ -158,7 +164,12 @@
       padding-right: 50px;
       padding-left: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
   }
+
 
   &--emotion {
     @media (min-width: $tablet-width) {
@@ -188,14 +199,16 @@
 
     gap: 16px;
     grid-template-columns: repeat(2, 280px);
+    // margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     max-width: 100%;
 
-    gap: 28px;
+    gap: 0;
+    padding-left: 53px;
   }
 }
 
@@ -213,10 +226,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 100%;
 
-    column-gap: 44px;
+    column-gap: 64px;
+    width: fit-content;
   }
 }
 
@@ -261,13 +275,15 @@
     margin: 0;
     padding: 16px 71px;
   }
+  @media (min-width: $desktop-width) {
+    max-width: 384px;
+  }
 }
-
 
 .form__hint {
   display: block;
   box-sizing: border-box;
-  margin-top: 3px;
+  margin-top: 2px;
   margin-right: auto;
 
   font-weight: 400;
@@ -277,11 +293,11 @@
   color: $require-grey;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     align-self: center;
     margin: 0;
 
     font-size: 14px;
+    padding-top: 8px;
   }
 }

@@ -63,7 +63,7 @@
 
         <!-- Заглавный блок -->
         <div class="feedback__introduction introduction">
-          <h2 class="introduction__title">Оставьте свой отзыв</h2>
+          <h2 class="introduction__title introduction__title--form">Оставьте свой отзыв</h2>
           <p class="introduction__text introduction__text--small">Помогите нашим отелям стать лучше! Оставьте отзыв о них,  а также о посещенных вами достопримечательностях</p>
         </div>
 
@@ -74,7 +74,7 @@
             <div class="form__inputs">
               <label class="element">
                 <span class="element__user">Имя*:</span>
-                <input class="element__user-input" type="text" name="name" placeholder="Имя" value="Петр">
+                <input class="element__user-input" type="text" name="name" placeholder="Имя" value="Пётр">
               </label>
               <label class="element">
                 <span class="element__user">Фамилия*:</span>
@@ -109,7 +109,7 @@
                 <span class="element__icon element__icon--radio"></span>
                 <span class="element__text">Скорее положительное</span>
               </label>
-              <label class="element">
+              <label class="element element--second">
                 <input class="element__input visually-hidden" name="experience" type="radio" value="negative">
                 <span class="element__icon element__icon--radio"></span>
                 <span class="element__text">Скорее отрицательное</span>
@@ -123,17 +123,17 @@
           </fieldset>
           <!-- Посещенные достопримечательности -->
           <fieldset class="form__fieldset form__fieldset--attraction">
-            <legend class="form__legend form__legend--attraction">Посещенные достопримечательности:</legend>
+            <legend class="form__legend form__legend--attraction">Посещенные <br> достопримечательности:</legend>
             <div class="form__checkbox">
               <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Мост дьявола" type="checkbox" checked>
                 <span class="element__icon element__icon--checkbox"></span>
-                <span class="element__text">Мост дьявола</span>
+                <span class="element__text">Мост Дьявола</span>
               </label>
               <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Гора-колокол" type="checkbox" checked>
                 <span class="element__icon element__icon--checkbox"></span>
-                <span class="element__text">Гора-колокол</span>
+                <span class="element__text">Гора-Колокол</span>
               </label>
               <label class="element">
                 <input class="element__input visually-hidden" name="attraction" value="Слайд-парк" type="checkbox" checked>
@@ -159,7 +159,7 @@
           <!-- Кнопка отправить отзыв -->
           <div class="form__submit">
             <button class="form__button" type="submit">Отправить отзыв</button>
-            <span class="form__hint">* - Обязательные поля</span>
+            <span class="form__hint">* — Обязательные поля</span>
           </div>
         </form>
       </section>
@@ -176,26 +176,38 @@
           <li class="contacts__item">
             <a class="contacts__link contacts__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
               <span class="visually-hidden">Наша страница в VK.</span>
+              <svg class="contacts__icon contacts__icon--vk" width="24" height="24">
+                <use href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="contacts__item">
             <a class="contacts__link contacts__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Телеграмм">
               <span class="visually-hidden">Наш канал в Telegram.</span>
+              <svg class="contacts__icon contacts__icon--telegram" width="24" height="24">
+                <use href="img/sprite.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
           <li class="contacts__item">
             <a class="contacts__link contacts__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow" title="Наш канал на YouTube">
               <span class="visually-hidden">Наш канал на YouTube.</span>
+              <svg class="contacts__icon contacts__icon--youtube" width="24" height="24">
+                <use href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
       </ul>
 
       <!-- Копирайт -->
       <div class="copyright">
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener nofollow" title="HTMLAcademy">
+          <p class="copyright__text">Разработано</p>
+          <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
+          <svg class="copyright__icon copyright__icon--html-academy" width="29" height="35">
+            <use href="img/sprite.svg#html-academy"></use>
+          </svg>
         </a>
-        <span class="visually-hidden">Ссылка на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
       </div>
     </footer>
 
