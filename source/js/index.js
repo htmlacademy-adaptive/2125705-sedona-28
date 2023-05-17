@@ -1,6 +1,7 @@
 const burger = document.querySelector('.toggle');
 const menu = document.querySelector('.navigation__list');
-
+const mapImg = document.querySelector('.map__img');
+const mapIframe = document.querySelector('.map__iframe');
 
 
 function handleButtonClick() {
@@ -23,3 +24,7 @@ window.addEventListener('resize', (e) => {
     menu.classList.remove('navigation__list--open');
   }
 });
+
+// Скрывает img
+mapImg.classList.add('visually-hidden');
+mapIframe.classList.remove('visually-hidden');

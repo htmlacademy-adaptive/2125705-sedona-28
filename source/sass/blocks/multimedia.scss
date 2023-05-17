@@ -1,30 +1,32 @@
 .multimedia {
-  // padding-right: 20px;
-  // padding-left: 20px;
-
   @media (min-width: $tablet-width) {
     padding-right: 60px;
     padding-left: 60px;
+    padding-top: 61px;
+    padding-bottom: 104px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 112px;
+    padding-bottom: 0;
   }
 }
 
 .multimedia__introduction {
-  padding: 37px 0 25px;
+  padding: 31px 20px 43px 20px;
 
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $hover-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 62px;
+    padding: 61px 0 86px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 0 104px;
+    padding-top: 0;
+    padding-bottom: 75px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding: 0;
 
   list-style-type: none;
@@ -17,6 +17,18 @@
   height: 48px;
 
   background-color: $blue;
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $down-blue;
+  }
+}
+
+.contacts__item:active .contacts__icon {
+  opacity: 0.3;
 }
 
 .contacts__item:not(:last-child) {
@@ -24,7 +36,8 @@
 }
 
 .contacts__link {
-  display: block;
+  display: flex;
+  justify-content: center;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -35,16 +48,13 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
 
-  &--vk {
-    background-image: url("../img/svg/vk.svg");
-  }
+.contacts__icon {
+  align-self: center;
+  fill: $white;
 
-  &--tg {
-    background-image: url("../img/svg/telegram.svg");
-  }
-
-  &--yt {
-    background-image: url("../img/svg/youtube.svg");
+  &:active {
+    background-color: $down-blue;
   }
 }
