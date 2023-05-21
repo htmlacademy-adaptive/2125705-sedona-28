@@ -66,12 +66,12 @@ const createWebp = () => {
 
 //SVG
 const svg = () =>
-gulp.src('source/img/svg/content/*.svg')
+gulp.src('source/img/svg/*.svg')
 .pipe(svgo())
-.pipe(gulp.dest('build/img/svg/content'));
+.pipe(gulp.dest('build/img/svg'));
 
 const sprite = () => {
-  return gulp.src('source/img/svg/sprite/*.svg')
+  return gulp.src('source/img/sprite/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: 'sprite' }))
   .pipe(gulp.dest('build/img'))
