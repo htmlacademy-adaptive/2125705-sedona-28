@@ -3,7 +3,6 @@
     padding-right: 60px;
     padding-left: 60px;
     padding-top: 61px;
-    padding-bottom: 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +19,8 @@
   border-bottom: 1px solid $hover-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 86px;
+    padding: 0;
+    padding-bottom: 86px;
 
     border: none;
   }

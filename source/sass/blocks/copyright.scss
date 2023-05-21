@@ -5,14 +5,16 @@
 }
 
 .copyright__link {
-  width: 129px;
-  height: 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   cursor: pointer;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .copyright__text {
@@ -23,6 +25,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  padding-right: 10px;
+  max-width: 70%;
 }
 
 .copyright__icon {

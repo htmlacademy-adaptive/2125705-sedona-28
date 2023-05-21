@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -13,15 +15,19 @@
   <body class="page__body">
 
     <!-- Шапка сайта -->
-    <header class="main-header">
-
+    <header class="main-header no-js">
       <!-- Кнопка для бургера -->
       <button class="toggle" type="button">
         <span class="visually-hidden">Переключить состояние меню.</span>
+        <svg class="toggle__svg" width="23" height="22">
+          <use href="img/sprite.svg#icon-menu-open"></use>
+        </svg>
+        <svg class="toggle__svg-close visually-hidden" width="23" height="22">
+          <use href="img/sprite.svg#icon-menu-close"></use>
+        </svg>
       </button>
 
       <nav class="navigation">
-
         <!-- Логотип -->
         <a class="logo" href="index.html">
           <span class="visually-hidden">Ссылка на главную страницу сайта.</span>
@@ -46,9 +52,8 @@
       </nav>
     </header>
 
-    <!-- Основное содержание Формы -->
+    <!-- Основное содержание Формы отзыва -->
     <main class="main-content">
-
       <!-- Добро пожаловать (welcome) -->
       <section class="welcome welcome--inner">
         <h1 class="visually-hidden">Отзыв посетителей городка Седона.</h1>
@@ -58,15 +63,14 @@
         </picture>
       </section>
 
-      <!-- Форма отзыва -->
       <section class="feedback">
-
         <!-- Заглавный блок -->
         <div class="feedback__introduction introduction">
           <h2 class="introduction__title introduction__title--form">Оставьте свой отзыв</h2>
           <p class="introduction__text introduction__text--small">Помогите нашим отелям стать лучше! Оставьте отзыв о них,  а также о посещенных вами достопримечательностях</p>
         </div>
 
+        <!-- Форма отзыва -->
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <!-- Представьтесь -->
           <fieldset class="form__fieldset form__fieldset--user">
@@ -86,6 +90,7 @@
               </label>
             </div>
           </fieldset>
+
           <!-- Контактная информация -->
           <fieldset class="form__fieldset form__fieldset--info">
             <legend class="form__legend form__legend--present">Контактная информация:</legend>
@@ -96,10 +101,11 @@
               </label>
               <label class="element">
                 <span class="element__user">Электронная почта*:</span>
-                <input class="element__user-input element__user-input--e-mail" name="e-mail" type="e-mail" placeholder="Введите e-mail">
+                <input class="element__user-input element__user-input--e-mail" name="e-mail" type="email" placeholder="Введите e-mail">
               </label>
             </div>
           </fieldset>
+
           <!-- Ваше общее впечатление -->
           <fieldset class="form__fieldset form__fieldset--impression">
             <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
@@ -121,6 +127,7 @@
               </label>
             </div>
           </fieldset>
+
           <!-- Посещенные достопримечательности -->
           <fieldset class="form__fieldset form__fieldset--attraction">
             <legend class="form__legend form__legend--attraction">Посещенные <br> достопримечательности:</legend>
@@ -147,6 +154,7 @@
               </label>
             </div>
           </fieldset>
+
           <!-- Опишите свои эмоции -->
           <fieldset class="form__fieldset form__fieldset--emotion">
             <legend class="form__legend form__legend--emotion">Опишите свои эмоции:</legend>
@@ -167,7 +175,6 @@
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-
       <!-- VisitSedona -->
       <span class="visit-sedona">#visitSEDONA</span>
 
@@ -181,6 +188,7 @@
               </svg>
             </a>
           </li>
+
           <li class="contacts__item">
             <a class="contacts__link contacts__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Телеграмм">
               <span class="visually-hidden">Наш канал в Telegram.</span>
@@ -189,6 +197,7 @@
               </svg>
             </a>
           </li>
+
           <li class="contacts__item">
             <a class="contacts__link contacts__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow" title="Наш канал на YouTube">
               <span class="visually-hidden">Наш канал на YouTube.</span>
@@ -216,9 +225,11 @@
     <!-- Что-то пошло не так -->
     <div class="modal-error">
       <div class="error">
-        <h3 class="error__title">Что-то пошло не так!</h3>
+        <h3 class="error__title">Что-то пошло не&nbsp;так!</h3>
         <p class="error__text">Проверьте, поля выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="error__button" type="submit">ok</button>
+        <button class="error__button" type="submit">Ok
+          <span class="visually-hidden">Закрыть окно ошибки.</span>
+        </button>
       </div>
     </div>
 
@@ -226,12 +237,13 @@
     <div class="modal-notice">
       <div class="notice">
         <h3 class="notice__title">Ваш отзыв отправлен!</h3>
-        <p class="notice__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+        <p class="notice__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в&nbsp;ближайшее время мы опубликуем его на сайте.</p>
         <div class="notice__button">
           <button class="notice__submit" type="submit">Закрыть окно</button>
         </div>
       </div>
     </div>
+
     <script src="js/index.js"></script>
   </body>
 </html>

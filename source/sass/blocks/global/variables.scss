@@ -1,4 +1,4 @@
-// Цвета фона и шрифта
+// Цвета фонов и шрифтов
 $blue: #81b3d2;
 $white: #ffffff;
 $grey: #eeeeee;
@@ -10,6 +10,7 @@ $line-grey: #dbdbdb;
 $modal-shadow: rgba(0, 1, 1, 0.15);
 $button-play: rgba($white, 0.7);
 $border-line: #d6d6d6;
+$body-shadow: rgba(0, 1, 1, 0.2);
 
 // Цвета состояний
 $figcaption-grey-active: #eaeaea;
@@ -19,7 +20,8 @@ $down-grey: #d5d5d5;
 $hover-blue: #669ec0;
 $down-blue: #5496bd;
 $down-copyright: #b3b3b3;
-
+$opacity-down-blue: rgba($down-blue, 0.3);
+$active-page: #766357;
 
 // Viewports
 $tablet-width: 768px;

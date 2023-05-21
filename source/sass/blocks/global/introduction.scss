@@ -24,7 +24,7 @@
   }
 
   &--catalog {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -68,6 +68,14 @@
   &--small {
     @media (min-width: $tablet-width) {
       max-width: 435px;
+    }
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
     }
   }
 }

@@ -24,7 +24,6 @@
   padding-bottom: 38px;
   padding-left: 8px;
 
-
   @media (min-width: $tablet-width) {
     padding-right: 60px;
     padding-bottom: 89px;
@@ -44,6 +43,12 @@
   height: 100%;
 
   object-fit: cover;
+  max-height: 177px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 500px;
+    max-width: 648px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 800px;

@@ -6,7 +6,7 @@
   position: relative;
   z-index: 5;
 
-  display: block;
+  display: none;
   margin: 0;
   padding: 0;
 
@@ -25,27 +25,16 @@
     box-shadow: none;
 
     grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 1fr);
   }
-
-  &--open {
-    position: absolute;
-    z-index: 5;
-
-    display: block;
-    width: 100%;
-  }
-
-  &--close {
-    display: none;
-  }
 }
 
 .navigation__item:last-child {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 87%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 87%, rgba($black, 0.2) 100%);
   background-color: $blue;
 
   @media (min-width: $tablet-width) {
@@ -54,17 +43,19 @@
 }
 
 .navigation__item {
-  padding: 17px 0 12px;
+  padding-top: 14px;
+  padding-bottom: 6px;
 
   background-color: $blue;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -1px 0 rgba($black, 0.2), inset 0 1px 0 rgba($white, 0.2);
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    // padding: 12px 5px;
     padding-top: 14px;
+    padding-right: 5px;
     padding-bottom: 11px;
     padding-left: 5px;
-    padding-right: 5px;
 
     background-color: $white;
     box-shadow: none;
@@ -72,14 +63,18 @@
     &:nth-child(3) {
       grid-column-start: 4;
     }
+
+    &--active .navigation__link {
+      color: $active-page;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 240px;
     padding-top: 14px;
+    padding-right: 0;
     padding-bottom: 11px;
     padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -91,10 +86,42 @@
   color: $white;
   text-decoration: none;
 
-  cursor: pointer;
-
-
   @media (min-width: $tablet-width) {
     color: $black;
+  }
+}
+
+.navigation__item:hover {
+  background-color: $hover-blue;
+}
+
+.navigation__item:active {
+  background-color: $down-blue;
+
+  & .navigation__link {
+    opacity: 0.3;
+  }
+}
+
+.navigation__item:disabled {
+  background-color: $hover-grey;
+
+  & .navigation__link {
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__item:hover {
+    background-color: transparent;
+  }
+
+  .navigation__item:hover a {
+    color: $blue;
+  }
+
+  .navigation__item:active {
+    color: $opacity-black;
+    background-color: transparent;
   }
 }
