@@ -1,0 +1,12 @@
+.main-content {
+  flex-grow: 1;
+  margin-bottom: 8px;
+
+  &--index {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

@@ -1,30 +1,13 @@
 const burger = document.querySelector('.toggle');
-const menu = document.querySelector('.navigation__list');
-const mapImg = document.querySelector('.map__img');
-const mapIframe = document.querySelector('.map__iframe');
+const header = document.querySelector('.no-js');
 
+const svgOpen = document.querySelector('.toggle__svg');
+const svgClose = document.querySelector('.toggle__svg-close');
 
-function handleButtonClick() {
-  burger.classList.toggle('toggle--close');
-  menu.classList.toggle('navigation__list--close');
-  menu.classList.toggle('navigation__list--open');
-}
+header.classList.remove('no-js');
 
-if (document.documentElement.clientWidth < 768) {
-  menu.classList.toggle('navigation__list--close');
-  burger.addEventListener('click',handleButtonClick);
-}
-
-window.addEventListener('resize', (e) => {
-  if (document.documentElement.clientWidth < 768) {
-    burger.addEventListener('click',handleButtonClick);
-  } else {
-    burger.removeEventListener('click',handleButtonClick);
-    menu.classList.remove('navigation__list--close');
-    menu.classList.remove('navigation__list--open');
-  }
+burger.addEventListener('click',() => {
+  header.classList.toggle('is-open');
+  svgOpen.classList.toggle('visually-hidden');
+  svgClose.classList.toggle('visually-hidden');
 });
-
-// Скрывает img
-mapImg.classList.add('visually-hidden');
-mapIframe.classList.remove('visually-hidden');

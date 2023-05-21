@@ -49,3 +49,17 @@
     box-sizing: border-box;
   }
 }
+
+.interesting__button:hover {
+  background-color: $hover-blue;
+}
+
+.interesting__button:active {
+  color: rgba($white, 0.3);
+  background-color: $down-blue;
+}
+
+.navigation__item:disabled {
+  background-color: $hover-grey;
+  color: rgba($white, 0.1);
+}

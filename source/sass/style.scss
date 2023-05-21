@@ -1,20 +1,23 @@
 
-@import "./blocks/global/fonts.scss";
+@import "blocks/global/fonts.scss";
 @import "blocks/global/variables.scss";
-@import "./blocks/global/global.scss";
-@import "./blocks/global/logo.scss";
-@import "./blocks/global/welcome.scss";
-@import "./blocks/global/introduction.scss";
+@import "blocks/global/global.scss";
+@import "blocks/global/logo.scss";
+@import "blocks/global/welcome.scss";
+@import "blocks/global/introduction.scss";
 
 // header
-@import "./blocks/header.scss";
-@import "./blocks/toggle.scss";
-@import "./blocks/navigation.scss";
+@import "blocks/header.scss";
+@import "blocks/toggle.scss";
+@import "blocks/navigation.scss";
+
+// main-content
+@import "blocks/global/main-content.scss";
 
 // main-index
-@import "./blocks/advantages.scss";
-@import "./blocks/interesting.scss";
-@import "./blocks/map.scss";
+@import "blocks/advantages.scss";
+@import "blocks/interesting.scss";
+@import "blocks/map.scss";
 
 // main-catalog
 @import "./blocks/multimedia.scss";

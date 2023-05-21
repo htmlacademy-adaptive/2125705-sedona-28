@@ -1,6 +1,12 @@
 .map {
   margin: 0;
   padding: 0;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .map__img {
@@ -12,4 +18,8 @@
   width: 100%;
 
   border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
