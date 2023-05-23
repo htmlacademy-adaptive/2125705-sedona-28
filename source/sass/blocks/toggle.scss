@@ -14,6 +14,10 @@
   cursor: pointer;
   z-index: 6;
 
+  .no-js & {
+    display: none;
+  }
+
   &:hover .toggle__svg {
     fill: $hover-blue;
   }
@@ -33,6 +37,14 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  .is-open & .toggle__svg-close {
+    display: block;
+  }
+
+  .is-open & .toggle__svg {
+    display: none;
+  }
 }
 
 .toggle__svg {
@@ -41,4 +53,5 @@
 
 .toggle__svg-close {
   fill: $white;
+  display: none;
 }

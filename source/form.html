@@ -12,8 +12,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page__body">
 
+  <body>
     <!-- Шапка сайта -->
     <header class="main-header no-js">
       <!-- Кнопка для бургера -->
@@ -22,7 +22,7 @@
         <svg class="toggle__svg" width="23" height="22">
           <use href="img/sprite.svg#icon-menu-open"></use>
         </svg>
-        <svg class="toggle__svg-close visually-hidden" width="23" height="22">
+        <svg class="toggle__svg-close" width="23" height="22">
           <use href="img/sprite.svg#icon-menu-close"></use>
         </svg>
       </button>
@@ -159,7 +159,7 @@
           <fieldset class="form__fieldset form__fieldset--emotion">
             <legend class="form__legend form__legend--emotion">Опишите свои эмоции:</legend>
             <label class="element element--label">
-              <span class="visually-hidden">Опишите подробно все свои восторги</span>
+              <span class="visually-hidden">Опишите подробно все свои восторги.</span>
               <textarea class="element__textarea" name="feedback" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
@@ -222,7 +222,7 @@
 
   <!-- Модальные окна -->
 
-    <!-- Что-то пошло не так -->
+    <!-- Для показа установить display: flex; -->
     <div class="modal-error">
       <div class="error">
         <h3 class="error__title">Что-то пошло не&nbsp;так!</h3>
@@ -233,7 +233,7 @@
       </div>
     </div>
 
-    <!-- Ваш отзыв отправлен -->
+    <!-- Для показа установить display: flex; -->
     <div class="modal-notice">
       <div class="notice">
         <h3 class="notice__title">Ваш отзыв отправлен!</h3>

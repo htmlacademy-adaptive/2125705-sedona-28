@@ -3,14 +3,11 @@ $blue: #81b3d2;
 $white: #ffffff;
 $grey: #eeeeee;
 $black: #000000;
-$opacity-black: rgba($black, 0.3);
-$require-grey: rgba(51, 51, 51, 0.6);
+$require-grey: #515151;
 $html-grey: #e7e5e5;
 $line-grey: #dbdbdb;
-$modal-shadow: rgba(0, 1, 1, 0.15);
-$button-play: rgba($white, 0.7);
 $border-line: #d6d6d6;
-$body-shadow: rgba(0, 1, 1, 0.2);
+$body-shadow: #001111;
 
 // Цвета состояний
 $figcaption-grey-active: #eaeaea;
@@ -20,7 +17,6 @@ $down-grey: #d5d5d5;
 $hover-blue: #669ec0;
 $down-blue: #5496bd;
 $down-copyright: #b3b3b3;
-$opacity-down-blue: rgba($down-blue, 0.3);
 $active-page: #766357;
 
 // Viewports
