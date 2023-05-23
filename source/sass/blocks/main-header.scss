@@ -1,0 +1,17 @@
+.main-header {
+  display: block;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.no-js {
+  position: static;
+}

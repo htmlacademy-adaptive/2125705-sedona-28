@@ -1,0 +1,126 @@
+.notice {
+  display: block;
+  align-self: center;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 46px;
+
+  font-style: normal;
+  font-family: "PT Sans", "Areal", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $white;
+  box-shadow: rgba($body-shadow, 0.15);
+
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+}
+
+.notice__title {
+  margin: 0;
+  margin-bottom: 27px;
+  padding-right: 39px;
+  padding-left: 37px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 99px;
+    padding-left: 96px;
+
+    font-size: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.notice__text {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-right: 39px;
+  padding-left: 37px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 99px;
+    padding-left: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.notice__button {
+  padding: 20px;
+
+  background-color: $peace-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 91px;
+  }
+}
+
+.notice__submit {
+  display: block;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 75px;
+  padding-bottom: 14px;
+  padding-left: 75px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Areal", sans-serif;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 157px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 158px;
+    padding-right: 158px;
+  }
+}
+
+.notice__submit:hover {
+  background-color: $hover-blue;
+}
+
+.notice__submit:active {
+  color: rgba($white, 0.3);
+
+  background-color: $down-blue;
+}
+
+.notice__submit:disabled {
+  color: rgba($white, 0.1);
+
+  background-color: $hover-grey;
+}

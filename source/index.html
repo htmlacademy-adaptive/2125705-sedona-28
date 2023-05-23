@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -12,8 +12,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page__body">
 
+  <body>
     <!-- Шапка сайта -->
     <header class="main-header no-js">
       <!-- Кнопка для бургера -->
@@ -22,7 +22,7 @@
         <svg class="toggle__svg" width="23" height="22">
           <use href="img/sprite.svg#icon-menu-open"></use>
         </svg>
-        <svg class="toggle__svg-close visually-hidden" width="23" height="22">
+        <svg class="toggle__svg-close" width="23" height="22">
           <use href="img/sprite.svg#icon-menu-close"></use>
         </svg>
       </button>
@@ -155,14 +155,14 @@
       <section class="map">
         <h3 class="visually-hidden">Карта расположения Седоны.</h3>
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/jpg/map-desktop.webp 1x, img/jpg/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/jpg/map-desktop.webp 1x, img/jpg/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/jpg/map-tablet.webp 1x, img/jpg/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/jpg/map-mobile.webp 1x, img/jpg/map-mobile@2x.webp 2x"> -->
+          <source type="image/webp" srcset="img/jpg/map-mobile.webp 1x, img/jpg/map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/jpg/map-desktop.jpg 1x">
           <source media="(min-width: 768px)" srcset="img/jpg/map-tablet.jpg 1x">
           <img class="map__img" src="img/jpg/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны.">
         </picture>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.136884996864!2d-111.83633796266217!3d34.85444188787897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682235082943!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.136884996864!2d-111.83633796266217!3d34.85444188787897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682235082943!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения Седоны.">
         </iframe>
       </section>
     </main>

@@ -3,7 +3,7 @@
 
   padding-top: 17px;
   padding-right: 20px;
-  padding-bottom: 0;
+  margin-bottom: 14px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
@@ -11,6 +11,7 @@
     padding-right: 60px;
     padding-bottom: 40px;
     padding-left: 60px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +48,6 @@
 
   @media (min-width: $tablet-width) {
     max-height: 500px;
-    max-width: 648px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,15 @@
   width: 48px;
   height: 54px;
 
-  background: $button-play;
+  background: rgba($white, 0.7);
 
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+  &:hover {
+    background: rgba($white, 1);
+  }
+
+  &:active {
+    background: rgba($white, 0.4);
+  }
 }

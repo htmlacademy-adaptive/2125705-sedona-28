@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -29,10 +31,6 @@
 
 .contacts__item:active .contacts__icon {
   opacity: 0.3;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 6px;
 }
 
 .contacts__link {

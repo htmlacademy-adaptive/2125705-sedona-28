@@ -3,10 +3,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-bottom: 64px;
+    padding-bottom: 50px;
   }
 }
 
@@ -34,10 +35,10 @@
 
     @media (min-width: $tablet-width) {
       align-self: flex-start;
-      box-sizing: border-box;
+
       width: 50%;
       margin: 0;
-      margin-bottom: 55px;
+      margin-bottom: 57px;
       padding: 8px 28px 8px 0;
 
       border-right: 1px solid $line-grey;
@@ -54,7 +55,7 @@
 
     @media (min-width: $tablet-width) {
       align-self: flex-start;
-      box-sizing: border-box;
+
       width: 50%;
       margin: 0 0 0 -1px;
       padding: 8px 0 8px 28px;
@@ -80,7 +81,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 73px;
+      margin-bottom: 74px;
     }
   }
 
@@ -159,7 +160,7 @@
   &--attraction {
     @media (min-width: $tablet-width) {
       padding-right: 60px;
-      padding-left: 60px;
+      padding-left: 53px;
       margin: 0 auto 28px auto;
     }
 
@@ -181,12 +182,20 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 15px;
+  }
 }
 
 .form__contact {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 15px;
+  }
 }
 
 .form__radio {
@@ -200,12 +209,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 280px 280px 238px;
     max-width: 100%;
+    margin-left: 52px;
 
-    column-gap: 64px;
+    column-gap: 29px;
 
     row-gap: 0;
   }
@@ -224,10 +233,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: 172px 170px 153px 184px;
     max-width: 100%;
+    margin: 0 46px;
 
     column-gap: 64px;
   }
@@ -298,7 +307,7 @@
 
 .form__hint {
   display: block;
-  box-sizing: border-box;
+
   margin-top: 2px;
   margin-right: auto;
 
@@ -306,7 +315,7 @@
   font-size: 12px;
   line-height: 21px;
   text-align: right;
-  color: $require-grey;
+  color: rgba($require-grey, 0.6);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

@@ -34,7 +34,6 @@
 .advantages__figure {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   background-color: $blue;
 
@@ -66,25 +65,24 @@
     &--opposite {
       flex-direction: row-reverse;
       padding-top: 0;
-      justify-content: flex-end;
+    }
+
+    .advantages__item {
+      width: calc(100% / 3);
+    }
+
+    picture {
+      width: calc((100% / 3) * 2);
     }
   }
 }
 
 .advantages__img {
   width: 100%;
-
-  object-fit: cover;
   max-height: 260px;
 
-  @media (min-width: $tablet-width) {
-    max-height: none;
-    max-width: 512px;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-width: 800px;
-  }
+  object-fit: cover;
+  height: 100%;
 }
 
 // жилье еда сувениры
@@ -101,13 +99,12 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 60px;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,23 +174,20 @@
   }
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    max-width: 256px;
     margin: 0;
     padding-right: 33px;
-    padding-left: 33px;
     padding-bottom: 60px;
+    padding-left: 33px;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 400px;
-
     padding-top: 100px;
-    padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 69px;
+    padding-left: 50px;
 
     text-align: center;
   }
@@ -231,11 +225,11 @@
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 41px;
     padding-right: 0;
     padding-left: 0;
-    padding-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -245,7 +239,6 @@
 
 // item для списка .advantages__list и .advantages__figure
 .advantages__item {
-  box-sizing: border-box;
   padding-top: 35px;
   padding-right: 15px;
   padding-bottom: 38px;
@@ -257,8 +250,6 @@
     border: none;
 
     @media (min-width: $tablet-width) {
-      box-sizing: border-box;
-      max-width: 256px;
       padding-top: 52px;
       padding-right: 30px;
       padding-bottom: 31px;
@@ -266,11 +257,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 400px;
       padding-right: 55px;
       padding-bottom: 51px;
       padding-left: 55px;
-      margin: 0 auto;
     }
   }
 
@@ -288,16 +277,13 @@
 
     @media (min-width: $tablet-width) {
       flex-grow: 1;
-      box-sizing: border-box;
-      max-width: 256px;
       padding: 0;
-      padding-left: 33px;
       padding-right: 33px;
       padding-bottom: 43px;
+      padding-left: 33px;
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 400px;
       padding-right: 50px;
       padding-bottom: 52px;
       padding-left: 50px;
@@ -305,7 +291,7 @@
   }
 }
 
-// Заголовок причин
+// заголовок причин
 .advantages__subtitle {
   margin: 0 auto;
 
@@ -315,8 +301,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
     max-width: 159px;
+
+    font-size: 21px;
   }
 
   & br {

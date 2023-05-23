@@ -1,15 +1,7 @@
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html {
@@ -19,10 +11,9 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-
   width: 100%;
-
+  min-width: 320px;
+  max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
 
@@ -32,15 +23,7 @@ body {
   color: $black;
 
   background-color: $white;
-  box-shadow: 0 5px 15px $body-shadow;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
+  box-shadow: 0 5px 15px rgba($body-shadow, 0.2);
 }
 
 img {

@@ -1,0 +1,96 @@
+.error {
+  display: block;
+  align-self: center;
+
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 41px;
+  padding-right: 42px;
+
+  font-style: normal;
+  font-family: "PT Sans", "Areal", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $white;
+  box-shadow: rgba($body-shadow, 0.15);
+
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+    padding: 54px 47px 49px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.error__title {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+.error__text {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.error__button {
+  display: block;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 77px;
+  padding-right: 77px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Areal", sans-serif;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 122px;
+  }
+}
+
+.error__button:hover {
+  background-color: $hover-blue;
+}
+
+.error__button:active {
+  color: rgba($white, 0.3);
+  background-color: $down-blue;
+}
+
+.error__button:disabled {
+  background-color: $hover-grey;
+  color: rgba($white, 0.1);
+}
