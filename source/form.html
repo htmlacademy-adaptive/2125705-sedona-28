@@ -110,19 +110,16 @@
           <fieldset class="form__fieldset form__fieldset--impression">
             <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
             <div class="form__radio">
-              <label class="element">
-                <input class="element__input visually-hidden" name="experience" type="radio" value="positive" checked>
-                <span class="element__icon element__icon--radio"></span>
+              <input class="form__input visually-hidden" id="positive" name="experience" type="radio" value="positive" checked>
+              <label class="form__label element element--radio" for="positive">
                 <span class="element__text">Скорее положительное</span>
               </label>
-              <label class="element element--second">
-                <input class="element__input visually-hidden" name="experience" type="radio" value="negative">
-                <span class="element__icon element__icon--radio"></span>
+              <input class="form__input visually-hidden" id="negative" name="experience" type="radio" value="negative">
+              <label class="form__label element element--second element--radio" for="negative">
                 <span class="element__text">Скорее отрицательное</span>
               </label>
-              <label class="element">
-                <input class="element__input visually-hidden" name="experience" type="radio" value="no-answer">
-                <span class="element__icon element__icon--radio"></span>
+              <input class="form__input visually-hidden" id="no-answer" name="experience" type="radio" value="no-answer">
+              <label class="form__label element element--radio" for="no-answer">
                 <span class="element__text">Затрудняюсь ответить</span>
               </label>
             </div>
@@ -132,24 +129,20 @@
           <fieldset class="form__fieldset form__fieldset--attraction">
             <legend class="form__legend form__legend--attraction">Посещенные <br> достопримечательности:</legend>
             <div class="form__checkbox">
-              <label class="element">
-                <input class="element__input visually-hidden" name="attraction" value="Мост дьявола" type="checkbox" checked>
-                <span class="element__icon element__icon--checkbox"></span>
+              <input class="form__input visually-hidden" id="bridge" name="attraction" value="Мост дьявола" type="checkbox" checked>
+              <label class="form__label element element--checkbox" for="bridge">
                 <span class="element__text">Мост Дьявола</span>
               </label>
-              <label class="element">
-                <input class="element__input visually-hidden" name="attraction" value="Гора-колокол" type="checkbox" checked>
-                <span class="element__icon element__icon--checkbox"></span>
+              <input class="form__input visually-hidden" id="mountain" name="attraction" value="Гора-колокол" type="checkbox" checked>
+              <label class="form__label element element--checkbox" for="mountain">
                 <span class="element__text">Гора-Колокол</span>
               </label>
-              <label class="element">
-                <input class="element__input visually-hidden" name="attraction" value="Слайд-парк" type="checkbox" checked>
-                <span class="element__icon element__icon--checkbox"></span>
+              <input class="form__input visually-hidden" id="park" name="attraction" value="Слайд-парк" type="checkbox" checked>
+              <label class="form__label element element--checkbox" for="park">
                 <span class="element__text">Слайд-парк</span>
               </label>
-              <label class="element">
-                <input class="element__input visually-hidden" name="attraction" value="Красные скалы" type="checkbox">
-                <span class="element__icon element__icon--checkbox"></span>
+              <input class="form__input visually-hidden" id="rock" name="attraction" value="Красные скалы" type="checkbox">
+              <label class="form__label element element--checkbox" for="rock">
                 <span class="element__text">Красные скалы</span>
               </label>
             </div>

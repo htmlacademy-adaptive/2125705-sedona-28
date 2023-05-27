@@ -4,6 +4,8 @@
   padding: 0;
 
   position: relative;
+  max-height: 350px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

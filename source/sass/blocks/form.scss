@@ -242,6 +242,18 @@
   }
 }
 
+.form__input[type="radio"]:checked + .form__label::after {
+  display: block;
+}
+
+.form__input[type="checkbox"]:checked + .form__label::after {
+  display: block;
+}
+
+.form__input:focus-visible + .form__label::before {
+  outline: 4px solid $down-grey;
+}
+
 .form__submit {
   padding-right: 20px;
   padding-left: 20px;
@@ -269,7 +281,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans", "Areal", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $white;
   text-transform: uppercase;
 
